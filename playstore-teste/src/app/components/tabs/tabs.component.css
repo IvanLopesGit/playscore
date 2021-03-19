@@ -1,0 +1,68 @@
+.nav-link {
+  border-radius: 13px 13px 0 0;
+  background-color: rgb(236, 236, 236);
+  margin-right: 15px;
+  width: 170px;
+  height: 35px;
+  text-align: center;
+}
+
+.mt-2 {
+  margin: 0 !important;
+}
+
+.container-modal {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  height: 600px;
+  width: 1420px;
+}
+
+.container-info {
+  display: flex;
+  padding-left: 40px;
+}
+
+.icon-football {
+  font-size: 50px;
+  align-content: center;
+  color: orange;
+  padding-top: 10px;
+  padding-right: 25px;
+}
+
+.text {
+  font-size: 25px;
+  padding-top: 15px;
+}
+
+.date {
+  font-size: 12px;
+  margin-top: -10px;
+}
+
+.total-jogos {
+  display: flex;
+  flex-direction: column;
+  padding-right: 40px;
+  text-align: center;
+  align-items: center;
+}
+
+.t-jogos {
+  font-size: 9px;
+  padding-top: 10px;
+}
+
+.jogos {
+  display: flex;
+  margin-top: -10px;
+  border-radius: 7px 7px;
+  background-color: orange;
+  height: 25px;
+  width: 80px;
+  color: white;
+  align-items: center;
+  justify-content: center;
+}

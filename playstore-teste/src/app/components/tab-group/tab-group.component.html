@@ -1,0 +1,31 @@
+<mat-tab-group animationDuration="2000ms" class="middle-tab">
+  <mat-tab label="Todos os Jogos">
+    <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+      <ng-container matColumnDef="tempo">
+        <th mat-header-cell *matHeaderCellDef></th>
+        <td mat-cell *matCellDef="let element">{{ element.tempo }}</td>
+      </ng-container>
+
+      <ng-container matColumnDef="time">
+        <th mat-header-cell *matHeaderCellDef></th>
+        <td mat-cell *matCellDef="let element">{{ element.time }}</td>
+      </ng-container>
+
+      <ng-container matColumnDef="score">
+        <th mat-header-cell *matHeaderCellDef></th>
+        <td mat-cell *matCellDef="let element">{{ element.score }}</td>
+      </ng-container>
+
+      <ng-container matColumnDef="time2">
+        <th mat-header-cell *matHeaderCellDef></th>
+        <td mat-cell *matCellDef="let element">{{ element.time2 }}</td>
+      </ng-container>
+
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+    </table>
+  </mat-tab>
+  <mat-tab label="Ao Vivo">Content 2</mat-tab>
+  <mat-tab label="Agendado">Content 3</mat-tab>
+  <mat-tab label="Encerrado">Content 3</mat-tab>
+</mat-tab-group>

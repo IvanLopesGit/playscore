@@ -1,0 +1,59 @@
+<nav ngbNav #nav="ngbNav" class="nav-tabs">
+  <ng-container ngbNavItem>
+    <a ngbNavLink>Futebol</a>
+    <ng-template ngbNavContent>
+      <div class="container-modal">
+        <div class="container-info">
+          <i class="fas fa-futbol icon-football"></i>
+          <div class="info">
+            <p class="text">Futebol</p>
+            <p class="date">Sexta-Feira, dia 19 de março de 2021</p>
+          </div>
+        </div>
+        <div class="total-jogos">
+          <p class="t-jogos">Total de Jogos</p>
+          <p class="jogos">10 Jogos</p>
+        </div>
+      </div>
+      <app-tab-group></app-tab-group>
+    </ng-template>
+  </ng-container>
+  <ng-container ngbNavItem>
+    <a ngbNavLink>Campeonatos</a>
+    <ng-template ngbNavContent>
+      <div class="container-modal">
+        <div class="container-info">
+          <i class="fas fa-futbol icon-football"></i>
+          <div class="info">
+            <p class="text">Campeonatos</p>
+            <p class="date">Sexta-Feira, dia 19 de março de 2021</p>
+          </div>
+        </div>
+        <div class="total-jogos">
+          <p class="t-jogos">Total de Jogos</p>
+          <p class="jogos">10 Jogos</p>
+        </div>
+      </div>
+    </ng-template>
+  </ng-container>
+  <ng-container ngbNavItem>
+    <a ngbNavLink>Desempenho</a>
+    <ng-template ngbNavContent>
+      <div class="container-modal">
+        <div class="container-info">
+          <i class="fas fa-futbol icon-football"></i>
+          <div class="info">
+            <p class="text">Desempenho</p>
+            <p class="date">Sexta-Feira, dia 19 de março de 2021</p>
+          </div>
+        </div>
+        <div class="total-jogos">
+          <p class="t-jogos">Total de Jogos</p>
+          <p class="jogos">10 Jogos</p>
+        </div>
+      </div>
+    </ng-template>
+  </ng-container>
+</nav>
+
+<div [ngbNavOutlet]="nav" class="mt-2"></div>
